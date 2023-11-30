@@ -11,7 +11,7 @@
             <v-col cols="4" class="">
               <v-col class="pa-0">
                 <v-btn
-                  block="true"
+                  :block="true"
                   class="d-flex justify-start text-capitalize"
                   size="64"
                   color="#121212"
@@ -29,7 +29,7 @@
               </v-col>
               <v-col class="pa-0 mt-4">
                 <v-btn
-                  block="true"
+                  :block="true"
                   class="d-flex justify-start text-capitalize"
                   size="64"
                   color="#121212"
@@ -49,7 +49,7 @@
             <v-col cols="4" class="">
               <v-col class="pa-0">
                 <v-btn
-                  block="true"
+                  :block="true"
                   class="d-flex justify-start text-capitalize"
                   size="64"
                   color="#121212"
@@ -65,7 +65,7 @@
               </v-col>
               <v-col class="pa-0 mt-4">
                 <v-btn
-                  block="true"
+                  :block="true"
                   class="d-flex justify-start text-capitalize"
                   size="64"
                   color="#121212"
@@ -83,7 +83,7 @@
             <v-col cols="4" class="">
               <v-col class="pa-0">
                 <v-btn
-                  block="true"
+                  :block="true"
                   class="d-flex justify-start text-capitalize"
                   size="64"
                   color="#121212"
@@ -101,7 +101,7 @@
               </v-col>
               <v-col class="pa-0 mt-4">
                 <v-btn
-                  block="true"
+                  :block="true"
                   class="d-flex justify-start text-capitalize"
                   size="64"
                   color="#121212"

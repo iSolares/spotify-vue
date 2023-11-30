@@ -121,11 +121,39 @@
             </v-col>
           </v-col>
         </v-row>
+        <v-row class="pa-3 mt-0 d-flex">
+          <v-col cols="12" class="pa-0">
+            <v-btn
+              :block="true"
+              flat
+              class="d-flex justify-start text-capitalize"
+              size="64"
+              color="#121212"
+            >
+              <v-avatar
+                class="rounded-ts rounded-bs"
+                image="../../assets/img/playlist-icon/house-of-ballons.png"
+                rounded="0"
+                size="64"
+              ></v-avatar>
+              <v-col class="pa-0 d-flex flex-column">
+                <p class="font-weight-bold mb-4 ml-2">House Of Ballons</p>
+                <p class="ml-2 d-flex justify-start size-font-library">
+                  Playlist • Solares
+                </p>
+              </v-col>
+            </v-btn>
+          </v-col>
+        </v-row>
       </aside>
     </v-card>
   </v-col>
 </template>
 <style scoped>
+.size-font-library {
+  font-size: 0.8rem;
+}
+
 .size-home-search {
   height: 13%;
   width: 93.2%;
