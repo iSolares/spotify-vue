@@ -41,7 +41,7 @@
     >
       <aside class="d-flex flex-column pa-0">
         <v-row class="h-100">
-          <v-col class="d-flex ml-2 mt-1 pb-0">
+          <v-col class="d-flex ml-2 mt-1 pt-2">
             <v-btn
               flat
               color="#121212"
@@ -51,7 +51,7 @@
               >Library</v-btn
             >
           </v-col>
-          <v-col class="d-flex flex-row-reverse text-cor">
+          <v-col class="d-flex pt-2 flex-row-reverse text-cor">
             <v-btn
               color="#121212"
               flat
@@ -94,7 +94,7 @@
           </v-col>
         </v-row>
         <v-row>
-          <v-col class="d-flex pt-0">
+          <v-col class="d-flex pt-0 pb-1">
             <v-col cols="auto">
               <v-btn
                 flat
@@ -121,26 +121,232 @@
             </v-col>
           </v-col>
         </v-row>
-        <v-row class="pa-3 mt-0 d-flex">
+        <v-row class="pa-3 pt-0 mt-0 d-flex">
+          <v-col cols="12" class="pa-0" >
+            <v-btn
+              :block="true"
+              flat
+              class="d-flex justify-start text-capitalize"
+              size="65"
+              color="#121212"
+            >
+              <v-avatar
+                class="rounded ml-2"
+                image="../../assets/img/playlist-icon/house-of-ballons.png"
+                size="50"
+              ></v-avatar>
+              <v-col class="pa-0 d-flex h-100 flex-column">
+                <v-col class="pa-0 pl-0 mt-3"> 
+                  <p class="ffont-weight-bold d-flex justify-start mb-1 ml-2">House Of Ballons</p>
+                </v-col>
+                <v-col class="pt-0 pl-0">
+                  <p
+                    class="ml-2 d-flex color-subtitle justify-start size-font-library"
+                  >
+                    Playlist • Solares
+                  </p>
+                </v-col>
+              </v-col>
+            </v-btn>
+          </v-col>
           <v-col cols="12" class="pa-0">
             <v-btn
               :block="true"
               flat
               class="d-flex justify-start text-capitalize"
-              size="64"
+              size="65"
               color="#121212"
             >
               <v-avatar
-                class="rounded-ts rounded-bs"
-                image="../../assets/img/playlist-icon/house-of-ballons.png"
-                rounded="0"
-                size="64"
+                class="rounded ml-2"
+                image="../../assets/img/playlist-icon/heroes-&-villains.png"
+                size="50"
               ></v-avatar>
-              <v-col class="pa-0 d-flex flex-column">
-                <p class="font-weight-bold mb-4 ml-2">House Of Ballons</p>
-                <p class="ml-2 d-flex justify-start size-font-library">
-                  Playlist • Solares
+              <v-col class="pa-0 d-flex h-100 flex-column">
+                <v-col class="pa-0 pl-0 mt-3">
+                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">Heroes & Villains</p>
+                </v-col>
+                <v-col class="pt-0 pl-0">
+                  <p
+                    class="ml-2 d-flex color-subtitle justify-start size-font-library"
+                  >
+                    Playlist • Solares
+                  </p>
+                </v-col>
+              </v-col>
+            </v-btn>
+          </v-col>
+          <v-col cols="12" class="pa-0">
+            <v-btn
+              :block="true"
+              flat
+              class="d-flex justify-start text-capitalize"
+              size="65"
+              color="#121212"
+            >
+              <v-avatar
+                class="rounded ml-2"
+                image="../../assets/img/playlist-icon/chase-atlantic.png"
+                size="50"
+              ></v-avatar>
+              <v-col class="pa-0 d-flex h-100 flex-column">
+                <v-col class="pa-0 pl-0 mt-3">
+                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">Chase Atlantic</p>
+                </v-col>
+                <v-col class="pt-0 pl-0">
+                  <p
+                    class="ml-2 d-flex color-subtitle justify-start size-font-library"
+                  >
+                    Playlist • Solares
+                  </p>
+                </v-col>
+              </v-col>
+            </v-btn>
+          </v-col>
+          <v-col cols="12" class="pa-0">
+            <v-btn
+              :block="true"
+              flat
+              class="d-flex justify-start text-capitalize"
+              size="65"
+              color="#121212"
+            >
+              <v-avatar
+                class="rounded ml-2"
+                image="../../assets/img/playlist-icon/the-neighbourhood-wiped-out.png"
+                size="50"
+              ></v-avatar>
+              <v-col class="pa-0 d-flex h-100 flex-column">
+                <v-col class="pa-0 pl-0 mt-3">
+                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">
+                    Wiped Out!
+                  </p>
+                </v-col>
+                <v-col class="pt-0 pl-0">
+                  <p
+                    class="ml-2 d-flex color-subtitle justify-start size-font-library"
+                  >
+                    Playlist •  
+                  </p>
+                  <p
+                    class="ml-2 d-flex color-subtitle justify-start size-font-library"
+                  >
+                    The Neighbourhood  
+                  </p>
+                </v-col>
+              </v-col>
+            </v-btn>
+          </v-col>
+          <v-col cols="12" class="pa-0">
+            <v-btn
+              :block="true"
+              flat
+              class="d-flex justify-start text-capitalize"
+              size="65"
+              color="#121212"
+            >
+              <v-avatar
+                class="rounded ml-2"
+                image="../../assets/img/playlist-icon/live-at-sofi-stadium.png"
+                size="50"
+              ></v-avatar>
+              <v-col class="pa-0 d-flex h-100 flex-column">
+                <v-col class="pa-0 pl-0 mt-3">
+                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">Live At Sofi Stadium</p>
+                </v-col>
+                <v-col class="pt-0 pl-0">
+                  <p
+                    class="ml-2 d-flex color-subtitle justify-start size-font-library"
+                  >
+                    Playlist • The Weeknd
+                  </p>
+                </v-col>
+              </v-col>
+            </v-btn>
+          </v-col>
+          <v-col cols="12" class="pa-0">
+            <v-btn
+              :block="true"
+              flat
+              class="d-flex justify-start text-capitalize"
+              size="65"
+              color="#121212"
+            >
+              <v-avatar
+                class="rounded ml-2"
+                image="../../assets/img/playlist-icon/utopia.png"
+                size="50"
+              ></v-avatar>
+              <v-col class="pa-0 d-flex h-100 flex-column">
+                <v-col class="pa-0 pl-0 mt-3">
+                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">
+                    Utopia
+                  </p>
+                </v-col>
+                <v-col class="pt-0 pl-0">
+                  <p
+                    class="ml-2 d-flex color-subtitle justify-start size-font-library"
+                  >
+                    Playlist • Travis Scott
+                  </p>
+                </v-col>
+              </v-col>
+            </v-btn>
+          </v-col>
+          <v-col cols="12" class="pa-0">
+            <v-btn
+              :block="true"
+              flat
+              class="d-flex justify-start text-capitalize"
+              size="65"
+              color="#121212"
+            >
+              <v-avatar
+                class="rounded ml-2"
+                image="../../assets/img/playlist-icon/currents.png"
+                size="50"
+              ></v-avatar>
+              <v-col class="pa-0 h-100 d-flex flex-column">
+                <v-col class="pa-0 pl-0 mt-3">
+                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">
+                    Currents
+                  </p>
+                </v-col>
+                <v-col class="pt-0 pl-0">
+                  <p
+                    class="ml-2 d-flex color-subtitle justify-start size-font-library">
+                    Playlist • Tame Impala
+                  </p>
+                </v-col>
+              </v-col>
+            </v-btn>
+          </v-col>
+          <v-col cols="12" class="pa-0">
+            <v-btn
+              :block="true"
+              flat
+              class="d-flex justify-start text-capitalize"
+              size="65"
+              color="#121212"
+            >
+              <v-avatar
+                class="rounded ml-2"
+                image="../../assets/img/playlist-icon/twilight-zone.png"
+                size="50"
+              ></v-avatar>
+              <v-col class="pa-0 h-100 d-flex flex-column">
+                <v-col class="pa-0 pl-0 mt-3">
+                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">
+                    Twilight Zone
+                  </p>
+                </v-col>
+                <v-col class="pt-0 pl-0">
+                  <p
+                  class="ml-2 d-flex color-subtitle justify-start size-font-library"
+                >
+                  Playlist • Aaron Hibell
                 </p>
+                </v-col>
               </v-col>
             </v-btn>
           </v-col>
@@ -158,9 +364,14 @@
   height: 13%;
   width: 93.2%;
 }
+
 .size-library {
   height: 76.1%;
   width: 93.2%;
+}
+
+.color-subtitle {
+  color: #b6b6b6;
 }
 
 .size-lat {
