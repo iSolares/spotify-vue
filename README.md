@@ -1,4 +1,5 @@
-# essentials
+# I'm taking the plunge and starting an application that recreates Spotify using Vuejs and Vuetify
+## The project is still under development
 
 ## Project setup
 
