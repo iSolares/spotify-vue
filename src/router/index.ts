@@ -6,11 +6,11 @@ import Login from "@/views/Login.vue"
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     component: Default,
     children: [
       {
-        path: 'Home',
+        path: '',
         name: 'Home',
         component: Home
       },
