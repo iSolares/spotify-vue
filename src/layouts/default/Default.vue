@@ -1,9 +1,9 @@
 <template>
   <v-app>
- <Home/>
+    <Home />
   </v-app>
 </template>
 
 <script lang="ts" setup>
-import Home from '@/views/Home.vue'
+import Home from "@/views/Home.vue";
 </script>

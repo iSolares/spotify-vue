@@ -1,7 +1,7 @@
 <template>
-  <HomeSearch />
+  <Home />
 </template>
 
 <script lang="ts" setup>
-  import HomeSearch from '@/components/HomeSearch.vue'
+import Home from "@/components/Home-component/Home.vue";
 </script>
