@@ -127,4 +127,12 @@
 
 <script lang="ts" setup>
 import HeaderComponent from "@/components/Header-Component/index.vue";
+
+ const getToken = () => {
+  let params = new URLSearchParams(document.location.search)
+  let code = params.get("code")
+  console.log(code)
+ }
+
+ getToken()
 </script>
