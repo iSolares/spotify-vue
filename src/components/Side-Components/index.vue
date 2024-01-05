@@ -51,7 +51,7 @@
               >Library</v-btn
             >
           </v-col>
-          <v-col class="d-flex pt-2 flex-row-reverse text-cor">
+          <v-col cols="auto" class="d-flex pt-2 flex-row-reverse text-cor">
             <v-btn
               color="#121212"
               flat
@@ -69,12 +69,12 @@
           </v-col>
         </v-row>
         <v-row>
-          <v-col class="py-0">
+          <v-col cols="auto" class="py-0">
             <v-btn
               flat
               color="#232323"
               size="small"
-              class="text-capitalize rounded-pill ml-2 mr-3"
+              class="text-capitalize rounded-pill  ml-2 mr-3"
               >Playlist</v-btn
             >
             <v-btn
