@@ -127,11 +127,31 @@
 
 <script lang="ts" setup>
 import HeaderComponent from "@/components/Header-Component/index.vue";
+import axios from "axios";
+
 
  const getToken = () => {
   let params = new URLSearchParams(document.location.search)
-  let code = params.get("code")
-  console.log(code)
+  let code: string = params.get("code");
+
+  let body = {
+    grant_type: "authorization_code",
+    code,
+    redirect_uri: "http://localhost:3000/home"
+  }
+
+  const clientId: string = "fed9d0d38d384a438545f78d75e0e5a7"
+  const clientSecret: string = "fd18d068c9b1484c80f70c6e3f0680ed"
+
+  axios({
+    method: "POST",
+    url: "https://accounts.spotify.com/api/token",
+    data: new URLSearchParams(Object.entries(body)).toString(),
+    headers: {
+      Authorization: `Basic ${btoa(clientId + ":" + clientSecret)}`,
+      "Content-Type": "application/x-www-form-urlencoded"
+    }
+  })
  }
 
  getToken()
