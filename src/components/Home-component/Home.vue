@@ -1,7 +1,8 @@
 <template>
-  <div class="d-flex h-100 bg-black">
+
+  <div class="h-100 bg-black">
     <v-row class="h-25">
-      <SideComponent />
+        <SideComponent />
       <MainComponent />
     </v-row>
   </div>

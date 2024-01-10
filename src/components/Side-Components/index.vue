@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="auto" class="pr-0 size-lat">
+  <v-col cols="2" class="pr-0 size-lat">
     <v-card
       class="d-flex ma-2 rounded-lg pa-2 size-home-search"
       color="#121212"
@@ -35,6 +35,7 @@
         </v-row>
       </aside>
     </v-card>
+    
     <v-card
       class="align-center ma-2 rounded-lg pa-2 size-library"
       color="#121212"
@@ -376,6 +377,6 @@
 
 .size-lat {
   height: 400%;
-  width: 16%;
+  min-width: 16% !important;
 }
 </style>
