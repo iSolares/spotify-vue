@@ -123,7 +123,7 @@
           </v-col>
         </v-row>
         <v-row class="pa-3 pt-0 mt-0 d-flex">
-          <v-col cols="12" class="pa-0" >
+          <v-col v-for="(item, idx) in playlist" :key="idx" cols="12" class="pa-0">
             <v-btn
               :block="true"
               flat
@@ -133,12 +133,12 @@
             >
               <v-avatar
                 class="rounded ml-2"
-                image="../../assets/img/playlist-icon/house-of-ballons.png"
+                :image="item.images[0].url"
                 size="50"
               ></v-avatar>
               <v-col class="pa-0 d-flex h-100 flex-column">
                 <v-col class="pa-0 pl-0 mt-3"> 
-                  <p class="ffont-weight-bold d-flex justify-start mb-1 ml-2">House Of Ballons</p>
+                  <p class="font-weight-bold d-flex text-wrap text-start justify-start mb-1 ml-2">{{ item.name }}</p>
                 </v-col>
                 <v-col class="pt-0 pl-0">
                   <p
@@ -146,207 +146,6 @@
                   >
                     Playlist • Solares
                   </p>
-                </v-col>
-              </v-col>
-            </v-btn>
-          </v-col>
-          <v-col cols="12" class="pa-0">
-            <v-btn
-              :block="true"
-              flat
-              class="d-flex justify-start text-capitalize"
-              size="65"
-              color="#121212"
-            >
-              <v-avatar
-                class="rounded ml-2"
-                image="../../assets/img/playlist-icon/heroes-&-villains.png"
-                size="50"
-              ></v-avatar>
-              <v-col class="pa-0 d-flex h-100 flex-column">
-                <v-col class="pa-0 pl-0 mt-3">
-                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">Heroes & Villains</p>
-                </v-col>
-                <v-col class="pt-0 pl-0">
-                  <p
-                    class="ml-2 d-flex color-subtitle justify-start size-font-library"
-                  >
-                    Playlist • Solares
-                  </p>
-                </v-col>
-              </v-col>
-            </v-btn>
-          </v-col>
-          <v-col cols="12" class="pa-0">
-            <v-btn
-              :block="true"
-              flat
-              class="d-flex justify-start text-capitalize"
-              size="65"
-              color="#121212"
-            >
-              <v-avatar
-                class="rounded ml-2"
-                image="../../assets/img/playlist-icon/chase-atlantic.png"
-                size="50"
-              ></v-avatar>
-              <v-col class="pa-0 d-flex h-100 flex-column">
-                <v-col class="pa-0 pl-0 mt-3">
-                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">Chase Atlantic</p>
-                </v-col>
-                <v-col class="pt-0 pl-0">
-                  <p
-                    class="ml-2 d-flex color-subtitle justify-start size-font-library"
-                  >
-                    Playlist • Solares
-                  </p>
-                </v-col>
-              </v-col>
-            </v-btn>
-          </v-col>
-          <v-col cols="12" class="pa-0">
-            <v-btn
-              :block="true"
-              flat
-              class="d-flex justify-start text-capitalize"
-              size="65"
-              color="#121212"
-            >
-              <v-avatar
-                class="rounded ml-2"
-                image="../../assets/img/playlist-icon/the-neighbourhood-wiped-out.png"
-                size="50"
-              ></v-avatar>
-              <v-col class="pa-0 d-flex h-100 flex-column">
-                <v-col class="pa-0 pl-0 mt-3">
-                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">
-                    Wiped Out!
-                  </p>
-                </v-col>
-                <v-col class="pt-0 pl-0">
-                  <p
-                    class="ml-2 d-flex color-subtitle justify-start size-font-library"
-                  >
-                    Playlist •  
-                  </p>
-                  <p
-                    class="ml-2 d-flex color-subtitle justify-start size-font-library"
-                  >
-                    The Neighbourhood  
-                  </p>
-                </v-col>
-              </v-col>
-            </v-btn>
-          </v-col>
-          <v-col cols="12" class="pa-0">
-            <v-btn
-              :block="true"
-              flat
-              class="d-flex justify-start text-capitalize"
-              size="65"
-              color="#121212"
-            >
-              <v-avatar
-                class="rounded ml-2"
-                image="../../assets/img/playlist-icon/live-at-sofi-stadium.png"
-                size="50"
-              ></v-avatar>
-              <v-col class="pa-0 d-flex h-100 flex-column">
-                <v-col class="pa-0 pl-0 mt-3">
-                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">Live At Sofi Stadium</p>
-                </v-col>
-                <v-col class="pt-0 pl-0">
-                  <p
-                    class="ml-2 d-flex color-subtitle justify-start size-font-library"
-                  >
-                    Playlist • The Weeknd
-                  </p>
-                </v-col>
-              </v-col>
-            </v-btn>
-          </v-col>
-          <v-col cols="12" class="pa-0">
-            <v-btn
-              :block="true"
-              flat
-              class="d-flex justify-start text-capitalize"
-              size="65"
-              color="#121212"
-            >
-              <v-avatar
-                class="rounded ml-2"
-                image="../../assets/img/playlist-icon/utopia.png"
-                size="50"
-              ></v-avatar>
-              <v-col class="pa-0 d-flex h-100 flex-column">
-                <v-col class="pa-0 pl-0 mt-3">
-                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">
-                    Utopia
-                  </p>
-                </v-col>
-                <v-col class="pt-0 pl-0">
-                  <p
-                    class="ml-2 d-flex color-subtitle justify-start size-font-library"
-                  >
-                    Playlist • Travis Scott
-                  </p>
-                </v-col>
-              </v-col>
-            </v-btn>
-          </v-col>
-          <v-col cols="12" class="pa-0">
-            <v-btn
-              :block="true"
-              flat
-              class="d-flex justify-start text-capitalize"
-              size="65"
-              color="#121212"
-            >
-              <v-avatar
-                class="rounded ml-2"
-                image="../../assets/img/playlist-icon/currents.png"
-                size="50"
-              ></v-avatar>
-              <v-col class="pa-0 h-100 d-flex flex-column">
-                <v-col class="pa-0 pl-0 mt-3">
-                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">
-                    Currents
-                  </p>
-                </v-col>
-                <v-col class="pt-0 pl-0">
-                  <p
-                    class="ml-2 d-flex color-subtitle justify-start size-font-library">
-                    Playlist • Tame Impala
-                  </p>
-                </v-col>
-              </v-col>
-            </v-btn>
-          </v-col>
-          <v-col cols="12" class="pa-0">
-            <v-btn
-              :block="true"
-              flat
-              class="d-flex justify-start text-capitalize"
-              size="65"
-              color="#121212"
-            >
-              <v-avatar
-                class="rounded ml-2"
-                image="../../assets/img/playlist-icon/twilight-zone.png"
-                size="50"
-              ></v-avatar>
-              <v-col class="pa-0 h-100 d-flex flex-column">
-                <v-col class="pa-0 pl-0 mt-3">
-                  <p class="font-weight-bold d-flex justify-start mb-1 ml-2">
-                    Twilight Zone
-                  </p>
-                </v-col>
-                <v-col class="pt-0 pl-0">
-                  <p
-                  class="ml-2 d-flex color-subtitle justify-start size-font-library"
-                >
-                  Playlist • Aaron Hibell
-                </p>
                 </v-col>
               </v-col>
             </v-btn>
@@ -356,6 +155,68 @@
     </v-card>
   </v-col>
 </template>
+<script setup lang="ts">
+import axios from "axios";
+import { ref, watchEffect } from "vue";
+
+const accessToken = ref("");
+const playlist = ref([])
+
+const getToken = async () => {
+  let params = new URLSearchParams(document.location.search);
+  let code: string = params.get("code");
+  const clientId: string = "fed9d0d38d384a438545f78d75e0e5a7";
+  const clientSecret: string = "fd18d068c9b1484c80f70c6e3f0680ed";
+
+  let body = {
+    grant_type: "authorization_code",
+    code,
+    redirect_uri: "http://localhost:3000/home",
+    client_id: clientId,
+    client_secret: clientSecret,
+  };
+
+  const res = await axios({
+    method: "POST",
+    url: "https://accounts.spotify.com/api/token",
+    data: new URLSearchParams(body).toString(),
+    headers: {
+      Authorization: `Basic ${btoa(clientId + ":" + clientSecret)}`,
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+  });
+
+  accessToken.value = res.data.access_token
+
+ const resUser = await axios({
+    method: "GET",
+    url: "https://api.spotify.com/v1/me",
+    headers: {
+      Authorization : `Bearer ${accessToken.value}`
+    }
+  })
+};
+
+const getUserPlaylist = async () => {
+
+const res = await axios({
+    method: "GET",
+    url: "https://api.spotify.com/v1/me/playlists",
+    headers: {
+    Authorization: `Bearer ${accessToken.value}`
+    }  
+  })
+  playlist.value = res.data.items.filter((_,index) => index <= 7)
+    console.log(res.data)
+}
+
+
+watchEffect(async()=>{
+  
+  await getToken();
+  await getUserPlaylist()
+})
+</script>
 <style scoped>
 .size-font-library {
   font-size: 0.8rem;
@@ -377,6 +238,7 @@
 
 .size-lat {
   height: 400%;
-  min-width: 16% !important;
+  min-width: 20% !important;
+
 }
 </style>

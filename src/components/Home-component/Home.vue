@@ -15,8 +15,9 @@ import MainComponent from "@/components/Main-Component/index.vue";
 
 <style>
 .size-main {
-  height: 88.8%;
-  width: 98%;
+  position: absolute;
+  height: 87.6%;
+  width: 80%;
 }
 
 .background-main {
