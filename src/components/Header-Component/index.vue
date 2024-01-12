@@ -42,7 +42,7 @@
                 class="mt-1 rounded-circle"
               >
                 <v-avatar size="50">
-                  <img width="50" src="../../assets/img/profile-pic.jpeg" />
+                  <img width="50" :src="profilePic" />
                 </v-avatar>
               </v-btn>
             </template>
@@ -63,6 +63,49 @@
 </template>
 
 <script lang="ts" setup>
+import axios from "axios";
+import { onBeforeMount, ref, watchEffect } from "vue";
+
+const accessToken = ref("");
+const profilePic = ref("")
+
+const getToken = async () => {
+  let params = new URLSearchParams(document.location.search);
+  let code: string = params.get("code");
+  const clientId: string = "fed9d0d38d384a438545f78d75e0e5a7";
+  const clientSecret: string = "fd18d068c9b1484c80f70c6e3f0680ed";
+
+  let body = {
+    grant_type: "authorization_code",
+    code,
+    redirect_uri: "http://localhost:3000/home",
+    client_id: clientId,
+    client_secret: clientSecret,
+  };
+
+  const res = await axios({
+    method: "POST",
+    url: "https://accounts.spotify.com/api/token",
+    data: new URLSearchParams(body).toString(),
+    headers: {
+      Authorization: `Basic ${btoa(clientId + ":" + clientSecret)}`,
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+  });
+  accessToken.value = res.data.access_token
+};
+
+const getProfileUser = async () => {
+  const res = await axios({
+    method: "GET",
+    url: "https://api.spotify.com/v1/me",
+    headers: {
+    Authorization: `Bearer ${accessToken.value}`
+    } 
+  })
+  profilePic.value = res.data.images[0].url
+}
+
 const greetingGoodMorning = () => {
   return new Date().getHours() < 12 ? true : false;
 };
@@ -74,4 +117,8 @@ const greetingGoodAfternoon = () => {
 const greetingGoodNight = () => {
   return new Date().getHours() >= 18 ? true : false;
 };
+onBeforeMount(async () => {
+  await getToken()
+  await getProfileUser()
+})
 </script>
