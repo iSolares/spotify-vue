@@ -157,7 +157,7 @@
 </template>
 <script setup lang="ts">
 import axios from "axios";
-import { ref, watchEffect } from "vue";
+import { ref, onBeforeMount } from "vue";
 
 const accessToken = ref("");
 const playlist = ref([])
@@ -211,8 +211,7 @@ const res = await axios({
 }
 
 
-watchEffect(async()=>{
-  
+onBeforeMount(async()=>{
   await getToken();
   await getUserPlaylist()
 })

@@ -38,7 +38,7 @@
 <script lang="ts" setup>
 import HeaderComponent from "@/components/Header-Component/index.vue";
 import axios from "axios";
-import { ref, watchEffect } from "vue";
+import { ref, onBeforeMount } from "vue";
 
 const accessToken = ref("");
 const playlist = ref([])
@@ -68,16 +68,6 @@ const getToken = async () => {
   });
 
   accessToken.value = res.data.access_token
-  console.log(accessToken.value)
-
- const resUser = await axios({
-    method: "GET",
-    url: "https://api.spotify.com/v1/me",
-    headers: {
-      Authorization : `Bearer ${accessToken.value}`
-    }
-  })
-
 };
 
 const getUserPlaylist = async () => {
@@ -94,8 +84,7 @@ const res = await axios({
 }
 
 
-watchEffect(async()=>{
-  
+onBeforeMount(async()=>{
   await getToken();
   await getUserPlaylist()
 })
