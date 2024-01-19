@@ -4,7 +4,7 @@
             <v-card class="card-size" color="#121212">
                 <v-img class="justify-center mt-13 mx-auto" :width="80" src="../../assets/img/Spotify-Logo.png"/>
                 <h1 class="d-flex mt-8 justify-center font-weight-black">Page Not Found</h1>
-                <h3 class="d-flex mt-5 justify-center">We can't seem to fin the page you are looking for</h3>
+                <h3 class="d-flex mt-5 justify-center">We can't seem to find the page you are looking for</h3>
                 <v-btn @click="redirectHome()" height="50" width="150" class="font-button mt-12 font-weight-bold d-flex text-capitalize rounded-pill mx-auto">Home</v-btn>
             </v-card>
         </div>
