@@ -1,17 +1,19 @@
 <template>
   <v-col cols="2" class="pr-0 size-lat">
     <v-card
-      class="d-flex ma-2 rounded-lg pa-2 size-home-search"
-      color="#121212"
+    class="d-flex ma-2 rounded-lg pa-2 size-home-search"
+    color="#121212"
     >
+    <v-col cols="12" class="pa-0">
       <aside class="d-flex flex-column pa-0">
         <v-row>
-          <v-col class="d-flex ml-3 mt-1 pb-0">
+          <v-col cols="12" class="d-flex ml-3 mt-1 pb-0">
             <v-btn
               flat
+              :block="true"
               variant="plain"
               color="#121212"
-              class="text-capitalize pl-0 text-body-1 text-cor font-weight-bold"
+              class="text-capitalize justify-start pl-0 text-body-1 text-cor font-weight-bold"
               ><v-icon icon="mdi-home-outline" class="mr-3" size="35"></v-icon
               >Home</v-btn
             >
@@ -21,9 +23,10 @@
           <v-col class="ml-3">
             <v-btn
               flat
+              :block="true"
               variant="plain"
               color="#121212"
-              class="text-capitalize pl-0 text-cor text-body-1"
+              class="text-capitalize justify-start pl-0 text-cor text-body-1"
               ><v-icon
                 icon="mdi-magnify"
                 size="35"
@@ -34,6 +37,7 @@
           </v-col>
         </v-row>
       </aside>
+    </v-col>
     </v-card>
     
     <v-card
