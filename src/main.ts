@@ -13,8 +13,12 @@ import { createApp } from 'vue'
 // Plugins
 import { registerPlugins } from '@/plugins'
 
+import { VueQueryPlugin } from '@tanstack/vue-query'
+
+
 const app = createApp(App)
 
 registerPlugins(app)
 
+app.use(VueQueryPlugin)
 app.mount('#app')
