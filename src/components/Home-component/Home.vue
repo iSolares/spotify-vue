@@ -2,7 +2,7 @@
   <div class="h-100 bg-black">
     <div v-if="isLoading && isLoadingProfilepic">Carrgando...</div>
     <div v-else>
-        <v-row class="h-25">
+      <v-row class="h-25">
         <SideComponent :playlist="playlist" />
         <MainComponent
           :playlist="playlist"
@@ -10,7 +10,7 @@
           :recents="recents"
         />
       </v-row>
-      </div>
+    </div>
   </div>
 </template>
 
@@ -31,12 +31,12 @@ const recents = ref();
 
 const { data, isLoading } = useQuery({
   queryKey: ["getSpotifyPlaylist"],
-  queryFn: async () => getUserPlaylist()
+  queryFn: async () => getUserPlaylist(),
 });
 
-const { data:profilePic, isLoading: isLoadingProfilepic } = useQuery({
+const { data: profilePic, isLoading: isLoadingProfilepic } = useQuery({
   queryKey: ["getSpotifyProfilePic"],
-  queryFn: async () => getProfilePic()
+  queryFn: async () => getProfilePic(),
 });
 
 console.log(data);
