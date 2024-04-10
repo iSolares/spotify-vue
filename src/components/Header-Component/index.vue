@@ -42,7 +42,7 @@
                 class="mt-1 rounded-circle"
               >
                 <v-avatar size="50">
-                  <img width="50" src="../../assets/img/profile-pic.jpeg" />
+                  <img width="50" :src="profilePic" />
                 </v-avatar>
               </v-btn>
             </template>
@@ -63,6 +63,9 @@
 </template>
 
 <script lang="ts" setup>
+
+const props = defineProps(["playlist","profilePic"])
+
 const greetingGoodMorning = () => {
   return new Date().getHours() < 12 ? true : false;
 };

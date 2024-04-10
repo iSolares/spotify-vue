@@ -1,58 +1,13 @@
-# I'm taking the plunge and starting an application that recreates Spotify using Vuejs and Vuetify
-## The project is still under development
+
 
 ## Project setup
 
 ```
-# yarn
-yarn
-
-# npm
+# Download dependences
 npm install
 
-# pnpm
-pnpm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-# yarn
-yarn dev
-
-# npm
+# Run project
 npm run dev
 
-# pnpm
-pnpm dev
 ```
 
-### Compiles and minifies for production
-
-```
-# yarn
-yarn build
-
-# npm
-npm run build
-
-# pnpm
-pnpm build
-```
-
-### Lints and fixes files
-
-```
-# yarn
-yarn lint
-
-# npm
-npm run lint
-
-# pnpm
-pnpm lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
