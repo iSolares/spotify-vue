@@ -126,7 +126,7 @@
             </v-col>
           </v-col>
         </v-row>
-        <v-row class="pa-3 pt-0 mt-0 d-flex">
+        <v-row class="pa-3 pt-0 padding-playlist-bottom mt-0 d-flex">
           <v-col
             v-for="(item, idx) in playlist"
             :key="idx"
@@ -176,14 +176,14 @@ const props = defineProps(["playlist"]);
   font-size: 0.8rem;
 }
 
-.size-home-search {
-  height: 13%;
-  width: 93.2%;
+:deep(.size-home-search) {
+  height: 10.8vh !important;
+  width: 34.7vh !important;
 }
 
-.size-library {
-  height: 76.1%;
-  width: 93.2%;
+:deep(.size-library) {
+  height: 76.1vh !important;
+  width: 34.7vh !important;
 }
 
 .color-subtitle {
@@ -193,5 +193,8 @@ const props = defineProps(["playlist"]);
 .size-lat {
   height: 400%;
   min-width: 20% !important;
+}
+:deep(.padding-playlist-bottom) {
+  padding-bottom: 1vh !important;
 }
 </style>

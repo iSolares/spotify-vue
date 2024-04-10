@@ -101,7 +101,7 @@ const getUserPlaylist = async () => {
       Authorization: `Bearer ${accessToken.value}`,
     },
   });
-  playlist.value = res.data.items.filter((_, index) => index <= 7);
+  playlist.value = res.data.items.filter((_, index) => index <= 8);
   recents.value = res.data.items.filter((_, index) => index <= 5);
   return res.data;
 };
